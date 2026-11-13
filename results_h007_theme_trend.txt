@@ -1,0 +1,14 @@
+H-007 results (filter vs buy-and-hold)
+
+window                B&H CAGR   B&H DD  FLT CAGR   FLT DD switches  result
+MAIN AI power           +18.6%   -25.4%    +17.7%   -20.3%        3  win*
+W1 CSCO 99-03            +0.9%   -89.3%    +18.3%   -59.4%        8  WIN 
+W2 QQQ 99-03             -6.8%   -83.0%    +16.9%   -41.3%        6  WIN 
+W3 ICLN+TAN 08-12       -39.4%   -91.7%    -29.0%   -80.2%        9  WIN 
+W4 ICLN+TAN 20-23       +12.0%   -63.1%     +0.6%   -63.1%       13  LOSS
+W5 ARKK 19-23            +7.9%   -80.9%     +8.4%   -46.9%       16  WIN 
+
+* main window is informational only (single episode)
+
+Analog wins: 4/5
+VERDICT: PASSES -> filter is a usable risk rule for theme bets

@@ -1,0 +1,32 @@
+589 favourite entries in 92 events, 2023-06-21 .. 2026-11-04 | skipped: {'not binary/settled': 0, 'no candles': 0, 'no favourite': 0}
+
+series      entries avg price     won  implied  net maker  net taker
+KXCPI           222     0.925   93.7%    92.5%     +1.03c     -3.09c
+KXFED           226     0.916   96.5%    91.6%     +4.73c     -1.59c
+KXPAYROLLS      141     0.922   89.4%    92.2%     -3.00c     -8.69c
+ALL             589     0.921   93.7%    92.1%     +1.48c     -4.24c
+
+by quarter (the spec expects the bias to shrink over time):
+   2023Q2:     3 entries, won 100.0% at avg 0.900, net maker +9.84c
+   2023Q3:    18 entries, won 100.0% at avg 0.910, net maker +8.86c
+   2023Q4:    27 entries, won 100.0% at avg 0.929, net maker +7.00c
+   2024Q1:    43 entries, won  90.7% at avg 0.922, net maker -1.61c
+   2024Q2:    45 entries, won  88.9% at avg 0.925, net maker -3.74c
+   2024Q3:    34 entries, won  97.1% at avg 0.920, net maker +4.90c
+   2024Q4:    75 entries, won  97.3% at avg 0.918, net maker +5.36c
+   2025Q1:    32 entries, won  93.8% at avg 0.913, net maker +2.27c
+   2025Q2:    44 entries, won 100.0% at avg 0.921, net maker +7.74c
+   2025Q3:    80 entries, won  98.8% at avg 0.924, net maker +6.22c
+   2025Q4:    33 entries, won  97.0% at avg 0.919, net maker +4.96c
+   2026Q1:    65 entries, won  81.5% at avg 0.921, net maker -10.65c
+   2026Q2:    49 entries, won  89.8% at avg 0.921, net maker -2.39c
+   2026Q3:    39 entries, won  89.7% at avg 0.926, net maker -2.99c
+   2026Q4:     2 entries, won 100.0% at avg 0.910, net maker +8.86c
+
+net per contract (maker): +1.48c, event-clustered t = 1.18
+a losing position loses its whole price: 6.3% of positions lost ~92c
+
+DEATH RULE (from hipotesis-semilla.json, H-004)
+   [PASS] N >= 200   (measured: 589)
+   [PASS] net per contract >= $0.01 (maker, upper bound)   (measured: +1.48c)
+   => H-004 SURVIVES (and significance: event-clustered t = 1.18)

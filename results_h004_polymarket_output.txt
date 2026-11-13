@@ -1,0 +1,38 @@
+7170 markets -> 3489 favourite entries in 1568 events, 2023-01-11 .. 2026-11-02 | skipped: {'not clean 1/0': 14, 'no history': 78, 'no favourite': 3589}
+
+quarter        entries events avg price     won  net maker  net taker t (maker)
+2024Q1             301    216     0.939   96.3%     +2.42c     +1.42c      2.26
+2024Q2             405    207     0.940   93.6%     -0.39c     -1.39c     -0.36
+2024Q3             376    187     0.945   91.0%     -3.54c     -4.54c     -2.36
+2024Q4             419    217     0.941   95.2%     +1.12c     +0.13c      1.12
+2025Q1             397    150     0.940   94.2%     +0.20c     -0.80c      0.21
+2025Q2             379    125     0.954   93.1%     -2.27c     -3.27c     -1.67
+2025Q3             164    100     0.937   89.0%     -4.64c     -5.64c     -1.79
+2025Q4             280    112     0.939   90.7%     -3.14c     -4.14c     -1.81
+2026Q1             198     83     0.945   87.4%     -7.11c     -8.11c     -2.64
+2026Q2             229     89     0.940   92.1%     -1.89c     -2.96c     -1.10
+2026Q3             187     75     0.941   94.7%     +0.54c     -0.59c      0.32
+2026Q4             154     57     0.941   87.0%     -7.12c     -8.23c     -2.15
+
+price bucket   entries events avg price     won  net maker  net taker t (maker)
+0.90-0.93         1533   1000     0.912   88.5%     -2.72c     -3.75c     -3.39
+0.93-0.96          788    520     0.947   93.0%     -1.66c     -2.68c     -1.87
+0.96-0.99         1168    494     0.978   97.8%     -0.06c     -1.06c     -0.15
+
+volume         entries events avg price     won  net maker  net taker t (maker)
+<$100k             505    311     0.940   96.0%     +2.04c     +1.04c      2.44
+$100k-1M           617    412     0.940   93.0%     -0.95c     -1.95c     -0.99
+>$1M              2367    945     0.943   91.8%     -2.53c     -3.55c     -4.35
+
+multi-outcome  entries events avg price     won  net maker  net taker t (maker)
+False             1407   1027     0.930   90.8%     -2.25c     -3.27c     -2.99
+True              2082    541     0.950   93.9%     -1.15c     -2.15c     -2.20
+
+ALL: net per share maker -1.59c (event-clustered t = -3.65), taker -2.61c (t = -5.97)
+won 92.6% at an average price of 94.2c; 257 losers each lost ~93c
+2026 only: 470 entries, net maker -3.97c (t = -2.75)
+
+DEATH RULE (same as the Kalshi test)
+   [PASS] N >= 200   (measured: 3489)
+   [FAIL] net per share >= $0.01 (maker, upper bound)   (measured: -1.59c)
+   => H-004 on Polymarket DIES (event-clustered t = -3.65)

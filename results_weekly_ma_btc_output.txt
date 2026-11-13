@@ -1,0 +1,40 @@
+BTC weekly closes 2014-09-21 .. 2026-11-08 (634 weeks)
+
+=== before 2021 ===
+variant              weeks  in BTC switches     CAGR   max DD | B&H CAGR   B&H DD
+20W cross              308     64%       17   117.1%   -72.1% |   123.7%   -83.0%
+20W 3 strikes          308     69%       13   117.0%   -66.0% |   123.7%   -83.0%
+50W cross              278     74%       15   123.0%   -64.2% |   143.6%   -83.0%
+50W 3 strikes          278     78%        5   122.2%   -67.1% |   143.6%   -83.0%
+100W cross             228     86%        8   107.6%   -80.1% |   140.2%   -83.0%
+100W 3 strikes         228     89%        4   103.6%   -83.3% |   140.2%   -83.0%
+200W cross             128     99%        2    72.4%   -60.4% |    78.3%   -60.4%
+200W 3 strikes         128    100%        0    78.3%   -60.4% |    78.3%   -60.4%
+
+=== 2021 on ===
+variant              weeks  in BTC switches     CAGR   max DD | B&H CAGR   B&H DD
+20W cross              306     57%       28    21.3%   -47.4% |    19.5%   -75.1%
+20W 3 strikes          306     65%       22    10.8%   -61.9% |    19.5%   -75.1%
+50W cross              306     65%       12    26.0%   -47.3% |    19.5%   -75.1%
+50W 3 strikes          306     68%        6    27.1%   -49.3% |    19.5%   -75.1%
+100W cross             306     62%        3    25.1%   -48.1% |    19.5%   -75.1%
+100W 3 strikes         306     63%        3    18.4%   -53.8% |    19.5%   -75.1%
+200W cross             306     84%       16     0.4%   -77.4% |    19.5%   -75.1%
+200W 3 strikes         306     88%        6     7.6%   -77.6% |    19.5%   -75.1%
+
+PASS RULE (2021 on): drawdown <= half of buy-and-hold's AND CAGR >= 75% of buy-and-hold's
+   [FAIL] 20W cross: CAGR 21.3% vs 19.5%, DD -47.4% vs -75.1%
+   [FAIL] 20W 3 strikes: CAGR 10.8% vs 19.5%, DD -61.9% vs -75.1%
+   [FAIL] 50W cross: CAGR 26.0% vs 19.5%, DD -47.3% vs -75.1%
+   [FAIL] 50W 3 strikes: CAGR 27.1% vs 19.5%, DD -49.3% vs -75.1%
+   [FAIL] 100W cross: CAGR 25.1% vs 19.5%, DD -48.1% vs -75.1%
+   [FAIL] 100W 3 strikes: CAGR 18.4% vs 19.5%, DD -53.8% vs -75.1%
+   [FAIL] 200W cross: CAGR 0.4% vs 19.5%, DD -77.4% vs -75.1%
+   [FAIL] 200W 3 strikes: CAGR 7.6% vs 19.5%, DD -77.6% vs -75.1%
+   => 0/8 variants pass: the weekly MA filter FAILS
+
+Where BTC stands now (2026-11-08, close $74,585):
+   20W MA $73,563: price is ABOVE
+   50W MA $75,485: price is BELOW
+   100W MA $89,072: price is BELOW
+   200W MA $67,752: price is ABOVE

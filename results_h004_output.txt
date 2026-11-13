@@ -1,0 +1,35 @@
+1282 favourite entries in 256 events, 2023-06-21 .. 2026-11-08 | skipped: {'not binary/settled': 0, 'no candles': 12358, 'no favourite': 1}
+
+series      entries avg price     won  implied  net maker  net taker
+KXCPI           222     0.925   93.7%    92.5%     +1.03c     -3.09c
+KXFED           226     0.916   96.5%    91.6%     +4.73c     -1.59c
+KXGDP           100     0.911   92.0%    91.1%     +0.90c     -3.46c
+KXHIGHNY        369     0.969   99.2%    96.9%     +2.28c     +1.70c
+KXPAYROLLS      141     0.922   89.4%    92.2%     -3.00c     -8.69c
+KXU3            224     0.928   99.1%    92.8%     +6.33c     +2.00c
+ALL            1282     0.935   96.1%    93.5%     +2.52c     -1.52c
+
+by quarter (the spec expects the bias to shrink over time):
+   2023Q2:     3 entries, won 100.0% at avg 0.900, net maker +9.84c
+   2023Q3:    18 entries, won 100.0% at avg 0.910, net maker +8.86c
+   2023Q4:    42 entries, won  97.6% at avg 0.929, net maker +4.62c
+   2024Q1:    71 entries, won  94.4% at avg 0.924, net maker +1.88c
+   2024Q2:    71 entries, won  91.5% at avg 0.926, net maker -1.10c
+   2024Q3:    56 entries, won  98.2% at avg 0.921, net maker +6.05c
+   2024Q4:    99 entries, won  97.0% at avg 0.920, net maker +4.85c
+   2025Q1:    45 entries, won  95.6% at avg 0.911, net maker +4.35c
+   2025Q2:    67 entries, won  98.5% at avg 0.917, net maker +6.72c
+   2025Q3:   106 entries, won  97.2% at avg 0.924, net maker +4.71c
+   2025Q4:    58 entries, won  98.3% at avg 0.919, net maker +6.25c
+   2026Q1:   141 entries, won  88.7% at avg 0.932, net maker -4.63c
+   2026Q2:   140 entries, won  95.0% at avg 0.935, net maker +1.51c
+   2026Q3:   226 entries, won  97.8% at avg 0.955, net maker +2.27c
+   2026Q4:   139 entries, won 100.0% at avg 0.972, net maker +2.80c
+
+net per contract (maker): +2.52c, event-clustered t = 3.85
+a losing position loses its whole price: 3.9% of positions lost ~94c
+
+DEATH RULE (from hipotesis-semilla.json, H-004)
+   [PASS] N >= 200   (measured: 1282)
+   [PASS] net per contract >= $0.01 (maker, upper bound)   (measured: +2.52c)
+   => H-004 SURVIVES (and significance: event-clustered t = 3.85)

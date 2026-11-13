@@ -1,0 +1,19 @@
+H-005  Congressional trades, committee-jurisdiction purchases  (run 2026-11-11)
+Data: House Clerk electronic PTRs filed 2025-01-03 .. 2026-10-14 (Senate eFD blocks Venezuela)
+9,903 transactions -> 7,676 events with prices (6 members unmatched to committees)
+Entry: open of first trading day after filing date. Cost 0.10% round trip.
+
+                       horizon/bench    n     mean     t     median  win%
+PRIMARY juris buys     20d vs sector   696   +0.47%  +0.95   -0.18%   49
+PRIMARY juris buys      5d vs sector   696   +0.14%  +0.65   +0.06%   51
+PRIMARY juris buys     20d vs SPY      696   +0.17%  +0.31   -0.46%   48
+all buys               20d vs sector  3638   +0.16%  +0.62   -0.34%   48
+non-juris buys         20d vs sector  2942   +0.08%  +0.31   -0.40%   47
+juris sells            20d vs sector  1006   -0.51%  -1.22   -0.60%   46
+all sells              20d vs sector  4038   -0.05%  -0.24   -0.22%   49
+
+Robustness (primary): trimming top/bottom 1% -> mean +0.06%.
+One trade (OPEN, Aug 2025, +209% vs sector) carries most of the mean.
+2025: n=486 mean +0.52% | 2026: n=210 mean +0.33%
+
+VERDICT: DIES  (mean +0.47% < +0.50%, t +0.95 < 2.0)

@@ -1,0 +1,14 @@
+ARK trades downloaded: 25066  (2020-09-09 .. 2026-11-10)
+events after cleaning: 19218  (conflicting ticker-days dropped: 2)
+events with prices: 15063  (buys 8279, sells 6784)
+
+================ H-006 FADE ARK ================
+  sell-minus-buy 20d net   weeks= 318  mean= -1.53%  NW t=-1.67
+  sell-minus-buy  5d net   weeks= 318  mean= -1.60%  NW t=-4.93
+  2020-22: mean -1.20% (weeks 120)   2023-26: mean -1.74% (weeks 198)
+  top-5 tickers share of positive contribution: 21%  (DSY, ADPT, CDNA, IRDM, TXG)
+--- context only ---
+  long what ARK sells, 20d vs sector, net  events= 6784 mean= -0.95%  NW t=-1.22
+  long what ARK buy s, 20d vs sector, net  events= 8279 mean= -0.29%  NW t=-0.30
+
+VERDICT: DIES (t -1.67 < 2; mean -1.53% < +0.50%)
